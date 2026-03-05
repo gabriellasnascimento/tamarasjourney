@@ -695,3 +695,83 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* ===== LANGUAGE SWITCHER ===== */
+.lang-switcher {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.lang-switcher__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: inherit;
+  font-family: 'Lora', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.navbar--scrolled .lang-switcher__btn {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.lang-switcher__btn:hover {
+  border-color: currentColor;
+}
+
+.lang-switcher__menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: #fff;
+  border: 1px solid #e5e0db;
+  list-style: none;
+  padding: 0.35rem 0;
+  min-width: 130px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.lang-switcher__menu.is-open {
+  display: block;
+}
+
+.lang-switcher__option {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.8rem;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-switcher__option:hover {
+  background: #f5f0eb;
+  color: #1a1a1a;
+}
+
+.lang-switcher__option.is-active {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    position: absolute;
+    right: 3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
