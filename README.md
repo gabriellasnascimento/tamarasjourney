@@ -5,6 +5,7 @@ Tamara Nascimento
 This website is a personal protfolio for my mother, Tamara Nascimento, created to highlight her life trajectory and her passions for cooking, hosting, and the art of the table. The site is structured as a storytelling experience with a hero section featuring her signature quote, a timeline that follows her journey (Cuba, Angola, Rio de Janeiro), and sections like "At the Table" and "Cooking as Art" to showcase her style, values, and love language of bringing people together through food. It also serves as a foundation for her future book, which will combine her personal story, her recipes, table settings, and the meaning of gathering. 
 
 ## [Link to Live site] 
+https://gabriellasnascimento.github.io/tamarasjourney/ 
 
 ## What I learned 
 - How designing for a real client changes priorities (clarity, warmth, and what the person actually needs).
